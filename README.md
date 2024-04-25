@@ -1,2 +1,2 @@
-# HtmlCssProjects
-Mini Projects using HTML CSS
+# HtmlCssJSProjects
+Mini Projects using HTML CSS JavaScript
