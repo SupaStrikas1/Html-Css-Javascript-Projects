@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f9ebde;
+}
+
+nav{
+    background-color:  #815854;
+    color: #f9ebde;
+    width: 100%;
+    font-size: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jersey 25', sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gamediv{
+    background-color: #f9ebde;
+    width: 80%;
+    color: #815854;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Nunito Sans', sans-serif;
+    position: relative;
+}
+
+.box{
+    border: 3px solid #815854;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: #815854;
+    color: #f9ebde;
+}
+
+.gameinfo{
+    padding-left: 10vw;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+
+.info{
+    font-size: 4vw;
+}
+
+#reset{
+    margin: 0px 20px;
+    padding: 2px 20px;
+    background-color: #815854;
+    color: #f9ebde;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 3vw;
+}
+
+.line{
+    background-color: #815854;
+    height: 6px;
+    width: 0;
+    position: absolute;
+    transition: width 1s ease-in-out;
+
+}
+
+@media screen and (max-width: 900px) {
+    .gamediv{
+        display: block;
+    }
+    .container{
+        margin-left: 30%;
+    }
+    .gameinfo{
+        padding: 8vw 0;
+    }
+    .info{
+        font-size: 10vw;
+    }
+    #reset{
+        font-size: 6vw;
+    }
+}
+
+.btr0{
+    border-right: 0;
+}
+.btt0{
+    border-top: 0;
+}
+.btb0{
+    border-bottom: 0;
+}
+.btl0{
+    border-left: 0;
+}
