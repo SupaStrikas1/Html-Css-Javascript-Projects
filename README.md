@@ -1,2 +1,2 @@
-# Html-Css-JS-Projects
+# HTML-CSS-JS-Projects
 Mini Projects using HTML CSS JavaScript
