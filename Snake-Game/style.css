@@ -21,3 +21,15 @@
     grid-template-rows: repeat(20,1fr);
     grid-template-columns: repeat(20,1fr);
 }
+
+.head{
+    background-color: #08D9D6;
+}
+
+.tail{
+    background-color: #07f5c9;
+}
+
+.food{
+    background-color: #FF2E63;
+}
