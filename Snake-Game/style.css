@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -22,14 +24,53 @@
     grid-template-columns: repeat(20,1fr);
 }
 
+#name1{
+    position: absolute;
+    left: 20px;
+    font-size: 107px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#name2{
+    position: absolute;
+    top: 240px;
+    left: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#scorebox{
+    position: absolute;
+    right: 140px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscorebox{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
 .head{
     background-color: #08D9D6;
+    border: 2px solid #252A34;
+    border-radius: 9px;
 }
 
 .tail{
-    background-color: #07f5c9;
+    background-color: #FF2E63;
+    border: .25vmin solid #252A34;
+    border-radius: 9px;
 }
 
 .food{
-    background-color: #FF2E63;
+    background-color: #f3ff09;
+    border-radius: 20px;
 }
