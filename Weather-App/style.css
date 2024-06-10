@@ -4,25 +4,25 @@
 }
 
 body{
-    background-color: #EEEEEE;
+    background-color: #1d2630;
+    overflow: hidden;
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #00ADB5;
+    background-color: #a68f4e;
     margin-bottom: 30px;
 }
 nav h1{
-    color: #EEEEEE;
     font-size: 3.5rem;
     padding: 15px 0;
 }
 
 .container{
     display: flex;
-    width: 100%;
+    width: 100vw;
     gap: 40px;
     padding: 15px;
 }
@@ -32,19 +32,17 @@ nav h1{
 }
 #city{
     width: 70%;
-    height: 30px;
-    font-size: 15px;
-    background-color: #EEEEEE;
+    height: 45px;
+    font-size: 18px;
     padding-left: 5px;
 }
 .searchbtn{
     width: 25%;
-    height: 30px;
-    font-size: 15px;
-    background-color: #00ADB5;
+    height: 49px;
+    font-size: 18px;
+    background-color: #a68f4e;
     border: none;
     outline: none;
-    color: #EEEEEE;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -52,22 +50,19 @@ nav h1{
     text-align: center;
     padding: 10px;
     font-size: 20px;
-    color: #222831;
+    color: #EEEEEE;
 }
 .currentloc{
     width: 100%;
-    height: 40px;
-    font-size: 15px;
-    background-color: #393E46;
-    color: #EEEEEE;
+    height: 50px;
+    font-size: 18px;
+    background-color: #a68f4e;
     cursor: pointer;
 }
 
 .container .weatherdata{
     width: 60%;
-    border: 1px solid black;
-    background-color: #00ADB5;
-    color: #EEEEEE;
+    background-color: #a68f4e;
     display: flex;
 }
 .details{
@@ -103,28 +98,32 @@ nav h1{
     font-size: 40px;
     padding: 20px;
     text-align: center;
+    color: #bbccc5;
 }
 .forcastcards{
     display: flex;
     gap: 20px;
+    list-style: none;
 }
 .cards{
-    background-color: #393E46;
-    color: #EEEEEE;
+    background-color: #bbccc5;
     width: 25%;
     font-size: 20px;
     padding: 10px;
+    border-radius: 9px;
 }
 .cards h3{
     text-align: center;
     font-size: 25px;
 }
 .cards .txt{
-    margin: -110px 0px 0px 120px;
-    padding: 0px;
+    margin: -110px 0px 25px 120px;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 .cards img{
-    margin: 0px 0px 45px 55px;
+    margin-left: -10px;
+    height: 150px;
 }
 .cards p{
     padding-top: 20px;
