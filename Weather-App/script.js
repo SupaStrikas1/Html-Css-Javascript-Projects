@@ -8,7 +8,7 @@ const API_KEY = "befbd74b68207fadf4ed4d3bfe5708dd";
 
 const createWeatherCard = (cityName, weatherItem, index) => {
 
-    const iconCode=weatherItem.weather[0].icon.replace('n', 'd');
+    const iconCode = weatherItem.weather[0].icon.replace('n', 'd');
 
     if (index === 0) {
         return `<div class="details">
@@ -86,5 +86,27 @@ const getCoordinates = () => {
         });
 }
 
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(currentCoordinates);
+    } else {
+        console.log("not supported");
+    }
+}
+
+function currentCoordinates(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    const API_URL_currentloc = `http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${API_KEY}`;
+    fetch(API_URL_currentloc)
+        .then(response => response.json())
+        .then(data => {
+            const { name } = data[0];
+            getWeatherdetails(name, latitude, longitude);
+    });
+
+}
+
 searchbtn.addEventListener("click", getCoordinates);
 cityinput.addEventListener("keyup", e => e.key === "Enter" && getCoordinates());
+currentloc.addEventListener("click", getLocation);
