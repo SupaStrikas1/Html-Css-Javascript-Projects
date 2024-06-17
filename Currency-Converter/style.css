@@ -1,111 +1,120 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    font-family: Josefin Sans, sans-serif;
 }
 
-body{
+body {
     background-color: #02343F;
     overflow: hidden;
 }
 
-.body{
+.body {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
 }
 
-.container{
+.container {
     background-color: #F0EDCC;
-    width: 350px;
-    padding: 10px;
+    width: 50vw;
+    padding: 2vw;
+    border: none;
+    border-radius: 2vw;
+    box-shadow: 10px 10px 10px;
 }
 
-.container header{
-    font-size: 35px;
+.container header {
+    font-size: 4vw;
     text-align: center;
     font-weight: bold;
-    padding: 5px;
+    color: #02343F;
 }
 
-.container form{
-    margin-top: 25px;
+.container form {
+    margin-top: 2vw;
 }
 
-.input{
 
+.input p {
+    font-size: 2.25vw;
 }
 
-.input p{
-    font-size: 20px;
+.input input {
+    width: 98%;
+    height: 3vw;
+    font-size: 2vw;
+    padding-left: 1.5vw;
+    margin-top: 0.5vw;
 }
 
-.input input{
-    width: 340px;
-    height: 30px;
-    font-size: 18px;
-    padding-left: 10px;
-}
-
-.select-currency{
-    margin-top: 30px;
+.select-currency {
+    margin-top: 2vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5vw;
     align-items: center;
 }
 
-.select-currency p{
-    font-size: 18px;
+.select-currency p {
+    font-size: 2vw;
+    text-align: center;
 }
 
-.from{
-    padding-left: 30px;
-}
-
-.to{
-    padding-right: 30px;
-}
-.select{
+.select {
     background-color: white;
     border: 1px solid #02343F;
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 1vw;
     border-radius: 5px;
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 
-.icon{
-    margin-top: 20px;
+.icon {
+    margin-top: 3vw;
+    font-size: 2.3vw;
 }
 
-.select select{
+.select select {
     background: none;
     border: none;
-    font-size: 15px;
+    font-size: 1.3vw;
     font-weight: bold;
 }
 
-.select img{
-    width: 30px;
+.select select option {
+    background-color: #02343F;
+    color: #F0EDCC;
 }
 
-.submit{
-    margin-top: 15px;
-    margin-left: 100px;
+.select img {
+    width: 3vw;
+    height: 2vw;
+    border: 1px solid black;
 }
 
-.submit button{
-    font-size: 17px;
-    padding: 5px;
+.submit {
+    margin-top: 2.5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.submit button {
+    font-size: 2vw;
+    padding: 1vw;
     background-color: #02343F;
     color: #F0EDCC;
     border: none;
-    border-radius: 3px;
+    border-radius: 0.4vw;
+    cursor: pointer;
 }
 
-.exchange-rate{
-    font-size: 25px;
+.exchange-rate {
+    font-size: 3vw;
     text-align: center;
-    margin: 10px;
+    margin-top: 3vw;
 }
