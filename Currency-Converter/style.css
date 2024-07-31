@@ -21,6 +21,7 @@ body {
 .container {
     background-color: #F0EDCC;
     width: 50vw;
+    height: 85vh;
     padding: 2vw;
     border: none;
     border-radius: 2vw;
@@ -28,7 +29,7 @@ body {
 }
 
 .container header {
-    font-size: 4vw;
+    font-size: 2.75rem;
     text-align: center;
     font-weight: bold;
     color: #02343F;
@@ -40,14 +41,13 @@ body {
 
 
 .input p {
-    font-size: 2.25vw;
+    font-size: 2rem;
 }
 
 .input input {
-    width: 98%;
-    height: 3vw;
-    font-size: 2vw;
-    padding-left: 1.5vw;
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 5px;
     margin-top: 0.5vw;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .select-currency p {
-    font-size: 2vw;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -72,6 +72,7 @@ body {
     border-radius: 5px;
     display: flex;
     gap: 10px;
+    width: fit-content;
 }
 
 .icon {
@@ -82,7 +83,7 @@ body {
 .select select {
     background: none;
     border: none;
-    font-size: 1.3vw;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -104,7 +105,7 @@ body {
 }
 
 .submit button {
-    font-size: 2vw;
+    font-size: 2rem;
     padding: 1vw;
     background-color: #02343F;
     color: #F0EDCC;
@@ -114,7 +115,7 @@ body {
 }
 
 .exchange-rate {
-    font-size: 3vw;
+    font-size: 2.75rem;
     text-align: center;
-    margin-top: 3vw;
+    margin-top: 5vw;
 }

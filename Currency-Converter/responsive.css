@@ -1,0 +1,57 @@
+@media screen and (max-width: 1270px) {
+    .exchange-rate {
+        font-size: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .input p {
+        font-size: 1.5rem;
+    }
+    .input input {
+        font-size: 1.5rem;
+    }
+    .select-currency p {
+        font-size: 1.5rem;
+    }
+    .select select {
+        font-size: 1.25rem;
+    }
+    .submit button {
+        font-size: 1.5rem;
+    }
+    .exchange-rate {
+        font-size: 1.67rem;
+        margin-top: 3vw;
+    }
+    .select-currency {
+        display: block;
+    }
+    .from, .to, .icon{
+        width: fit-content;
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container header {
+        font-size: 2rem;
+    }
+    .from, .to, .icon{
+        padding: 5px;
+    }
+    .exchange-rate {
+        font-size: 1.67rem;
+        margin-top: 8vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container header {
+        font-size: 1.5rem;
+    }
+    .exchange-rate {
+        margin-top: 10vw;
+    }
+}
