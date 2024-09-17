@@ -70,7 +70,7 @@ const getCoordinates = () => {
     const cityName = cityinput.value.trim();
     if (cityName === "") return;
 
-    const API_URL_cityName = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
+    const API_URL_cityName = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
 
     fetch(API_URL_cityName)
         .then(response => response.json())
@@ -97,7 +97,7 @@ function getLocation() {
 function currentCoordinates(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    const API_URL_currentloc = `http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${API_KEY}`;
+    const API_URL_currentloc = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${API_KEY}`;
     fetch(API_URL_currentloc)
         .then(response => response.json())
         .then(data => {
